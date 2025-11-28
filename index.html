@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Crypto RPS Game</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- 1. Import Ethers.js -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/ethers/5.7.2/ethers.umd.min.js"></script>
+</head>
+<body>
+
+<header>
+    <h1>Rock Paper Scissors (Blockchain)</h1>
+    <!-- 2. Connect Button & Address -->
+    <div class="wallet-controls">
+        <button id="connectBtn">Connect Wallet</button>
+        <span id="walletAddress"></span>
+    </div>
+</header>
+
+<div class="score-board">
+    <div id="user-label" class="badge">user</div>
+    <div id="computer-label" class="badge">computer</div>
+
+    <span id="user-score">0</span> :
+    <span id="computer-score">0</span>
+</div>
+
+<div class="result">
+    <p>Connect wallet to start playing!</p>
+</div>
+
+<div class="choices">
+    <div class="choice" id="r">
+        <img src="images/rock.png" alt="Rock">
+    </div>
+
+    <div class="choice" id="p">
+        <img src="images/paper.png" alt="Paper">
+    </div>
+
+    <div class="choice" id="s">
+        <img src="images/scissors.png" alt="Scissors">
+    </div>
+</div>
+
+<p id="action-msg">Bet: 0.0001 tBNB</p>
+
+<script src="app.js"></script>
+</body>
+</html>

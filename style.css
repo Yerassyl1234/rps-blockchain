@@ -1,0 +1,133 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #181823;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+header {
+    background: white;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between; /* Разделяем заголовок и кнопку */
+    align-items: center;
+}
+
+header > h1 {
+    color: #181823;
+    font-size: 26px;
+}
+
+/* WALLET CONTROLS */
+.wallet-controls {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+#connectBtn {
+    background-color: #E2584D;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+#connectBtn:hover {
+    background-color: #c4463d;
+}
+
+#walletAddress {
+    color: #181823;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+.score-board {
+    margin: 20px auto;
+    border: 3px solid white;
+    text-align: center;
+    width: 200px;
+    color: white;
+    font-size: 36px;
+    padding: 10px 20px;
+    position: relative;
+    border-radius: 10px;
+}
+
+.badge {
+    background: #E2584D;
+    color: white;
+    font-size: 14px;
+    padding: 2px 8px;
+    border-radius: 4px;
+}
+
+#user-label {
+    position: absolute;
+    top: 20px;
+    left: -35px;
+}
+
+#computer-label {
+    position: absolute;
+    top: 20px;
+    right: -45px;
+}
+
+.result {
+    font-size: 26px;
+    color: white;
+    margin-top: 10px;
+    text-align: center;
+    font-weight: bold;
+    min-height: 40px;
+}
+
+.choices {
+    margin: 40px auto;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+}
+
+.choice {
+    border: 4px solid white;
+    border-radius: 15px;
+    padding: 10px;
+    transition: all 0.3s;
+    width: 180px;
+    height: 180px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #21222d;
+}
+
+.choice img {
+    width: 120px;
+    height: 120px;
+    object-fit: contain;
+    opacity: 0.85;
+}
+
+.choice:hover {
+    cursor: pointer;
+    background: #353642;
+    transform: scale(1.05);
+}
+
+#action-msg {
+    text-align: center;
+    color: white;
+    font-size: 18px;
+    margin-top: 10px;
+}
